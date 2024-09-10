@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donation Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Support Our Game</h1>
+        <p>Your donations help us improve the game and bring more updates.</p>
+        
+        <form id="donation-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="amount">Donation Amount:</label>
+            <input type="number" id="amount" name="amount" required>
+
+            <button type="button" id="google-pay-button">Donate with Google Pay</button>
+        </form>
+    </div>
+
+    <script src="https://pay.google.com/gp/p/js/pay.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
